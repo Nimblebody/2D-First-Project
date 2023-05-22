@@ -20,7 +20,11 @@ public class NpcMovement : MonoBehaviour
         Debug.Log($"Slime Component's : {transform.position}");
         Debug.Log($"Gameobject's Name: {gameObject}");
     }
-
+    public void Initialize(Transform[] points, Transform hero)
+    {
+        _points = points;
+        _hero = hero;
+    }
 
     private void Update()
     {
